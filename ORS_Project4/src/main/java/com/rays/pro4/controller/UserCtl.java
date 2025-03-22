@@ -29,8 +29,6 @@ import com.rays.pro4.Util.ServletUtility;
  * 
  */
 
-
- 
 @WebServlet(name = "UserCtl", urlPatterns = { "/ctl/UserCtl" })
 public class UserCtl extends BaseCtl {
 
@@ -302,7 +300,7 @@ public class UserCtl extends BaseCtl {
 		} else if (OP_CANCEL.equalsIgnoreCase(op)) {
 			System.out.println(" U  ctl Do post 77777");
 
-			ServletUtility.redirect(ORSView.USER_CTL, request, response);
+			ServletUtility.redirect(ORSView.USER_LIST_CTL, request, response);
 			return;
 		}
 		ServletUtility.forward(getView(), request, response);

@@ -39,7 +39,7 @@ public class FrontControler implements Filter {
 
 		HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse) resp;
-		
+
 		HttpSession session = request.getSession();
 
 		if (session.getAttribute("user") == null) {
